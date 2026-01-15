@@ -24,9 +24,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run CLI analysis on examples
+      - name: Run CLI analysis on sample
         run: |
-          python cli/cli_main.py examples/sample.py
+          python -m cli.cli_main examples/sample.py
 
       - name: Run tests
         run: |
